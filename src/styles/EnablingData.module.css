@@ -1,5 +1,5 @@
 .main {
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: #142643;
     color: white;
     display: flex;
@@ -34,8 +34,8 @@
 }
 .card {
     border-radius: 30px;
-    padding: 10%;
-    margin: 10%;
+    padding: 5% 5%;
+    margin: 10% 5%;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.05);
     transition-duration: 1s;
     cursor: pointer;
