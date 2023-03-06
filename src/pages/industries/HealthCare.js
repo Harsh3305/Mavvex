@@ -1,7 +1,7 @@
 import styles from "@/styles/HealthCare.module.css"
 import MainContent from "@/components/industryComponents/MainContent";
 import UseCases from "@/components/industryComponents/UseCases";
-export default function Comp() {
+export default function HealthCare() {
     const data = [
         {
             heading: "Instant access to patients' data",
