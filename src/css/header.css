@@ -1,0 +1,102 @@
+.header_body {
+    width: 100vw;
+    padding: 0.5em 0em 0.5em 0em;
+    background-color: white;
+}
+.header_inner_body {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    margin: 0 8em 0 8em;
+}
+.logo_image {
+    object-fit: contain;
+    width: 8em;
+}
+.logo_section {
+    flex: 0.1;
+}
+.heading_section {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex: 0.8;
+}
+.button_section {
+    flex: 0.1;
+}
+.header_text {
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 2.2em; */
+}
+.header_dropdown {
+    margin-left: 0.2em;
+    object-fit: contain;
+    height: 0.2em;
+    transform: scale(1.5);
+}
+
+.header_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0669fd;
+    border-radius: 50px;
+    width: 9em;
+    height: 3em;
+    cursor: pointer;
+    transition: background, box-shadow 3ms ease-in-out;
+}
+.header_btn:hover {
+    background: #0059df;
+    box-shadow: 0px 1px 12px rgba(0,0,0,.11);
+}
+.button_text {
+    color: white;
+    font-size: 1.8em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    margin-left: 3em;
+    cursor: pointer;
+}
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    min-width: 20em;
+    max-width: fit-content;
+    /* top: 140%; */
+    list-style: none;
+}
+.dropdown_content>li  p{
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.4em;
+    line-height: 70%;
+    padding: .5em;
+    color: #535353;
+    transition: color 3ms ease-in-out;
+    cursor: pointer;
+}
+.dropdown_content>li p:hover {
+    color: #0669fd;
+}
+.dropdown:hover .dropdown_content {display: block;}

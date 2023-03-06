@@ -1,0 +1,81 @@
+.footer_body {
+    margin-top: 20px;
+    height: 526px;
+    width: 100vw;
+    background-color: white;
+    padding: 50px 0px 50px 0px;
+}
+.footer_inner_body {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 8em 0px 8em;
+    /* padding: 50px 0px 50px 0px; */
+}
+.company_info {
+    flex: 0.2;
+    height: 100%;
+    /* background-color: red; */
+    margin-left: 0.5em;
+    padding-right: 2.4em;
+}
+.footer_text {
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-size: 1.8em;
+    color: #535353;
+    line-height: 28px;
+}
+.footer_email {
+    margin-top: .5em;
+}
+.footer_text_high {
+    color: black;
+    margin-top: .5em;
+}
+.footer_icons_btn {
+    object-fit: contain;
+    width: 3.5em;
+    height: 3.5em;
+    border: 0.1em solid #535353;
+    display: grid;
+    place-items: center;
+    border-radius: 0.6em;
+    background-color: white;
+    transition: transform 3ms ease-in-out;
+    cursor: pointer;
+    margin-top: 1em;
+    user-select: none;
+    transform: scale(0.8);
+    margin-right: .5em;
+}
+.footer_icons_btn:hover {
+    transform: scale(0.9);
+}
+
+.social_btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding-right: 3em; */
+}
+.cmp_srvc{
+    padding-top: 1.7em;
+}
+.company_info_title{
+    font-family: 'Dongle', sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
+    color: black;
+    background-color: white;
+}
+.srvc_list{
+    list-style: none;
+    background-color: white;
+    margin-top: 1.5em;
+}
+.srvc_list_items {
+    margin-top: 0.6em;
+}
