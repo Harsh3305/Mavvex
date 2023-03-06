@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    /*background-color: #FA4197;*/
+    justify-content: flex-start;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.industries {
+    font-family: 'DM Sans', sans-serif, monospace;
+    font-size: 36px;
+    font-weight: bold;
+}
+.industryType {
+    color: #0669FD;
+    font-family: 'Dongle', sans-serif;
+    font-size: 80px;
+}
+.image {
+    margin-left: 100px;
+}
+.content {
+    width: 80%;
+    font-size: x-large;
+    font-weight: lighter;
+    font-family: 'Dongle', sans-serif;
+}
+.buttons {
+    margin-top: 30px;
+}
+.button {
+    color: white;
+    font-size: x-large;
+    font-family: 'Dongle', sans-serif;
+    border-radius: 50px;
+    padding: 10px 20px;
+
+}
+.buttonHighlighted {
+    border: none;
+    background-color: #0669FD;
+    margin-right: 20px;
+}
+.normalButton {
+    background-color: white;
+    border-color: #0669FD;
+    color: #0669FD;
+}
