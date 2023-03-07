@@ -29,9 +29,9 @@ export default function Abouttitle() {
 
         
        </div>
-       <div className={styles.contact}>
+       {/* <div className={styles.contact}>
         
-       </div>
+       </div> */}
 
     </div>
 }
