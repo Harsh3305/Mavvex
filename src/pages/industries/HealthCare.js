@@ -25,7 +25,7 @@ export default function HealthCare() {
                     " more accurate diagnosis, and treatment of diseases. AI-powered tools such as machine learning" +
                     " algorithms and natural language processing can analyze vast amounts of medical data, including" +
                     " patient records, medical images, and genomic data, to identify patterns and make predictions."}
-                imageUrl={"http://localhost:3000/image_assets/features.svg"}
+                imageUrl={"/image_assets/features.svg"}
             />
             <UseCases
                 data={data}
