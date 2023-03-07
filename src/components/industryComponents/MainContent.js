@@ -24,6 +24,8 @@ export default function MainContent ({industryType, content, imageUrl}) {
         </div>
         <Image
             className={styles.image}
+            width={500}
+            height={500}
             src={imageUrl}
         />
     </div>
