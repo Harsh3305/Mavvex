@@ -47,7 +47,7 @@
     font-weight: bold;
     line-height: 99.2%;
     letter-spacing: -3%;
-    font-size: 5em;
+    font-size: var(--font-xxl);
     width: 50%;
 }
 .gradient_text {
@@ -62,7 +62,7 @@
     margin-top: 2em;
     width: 50%;
     font-family: var(--font-dongle);
-    font-size: 2em;
+    font-size: var(--font-48);
     font-weight: 400;
     line-height: 80.8%;
     letter-spacing: -1%;
@@ -79,7 +79,7 @@
 
 .btn {
     font-family: var(--font-dongle);
-    font-size: 1.6em;
+    font-size: var(--font-35);
     padding: 0 1.5em;
     border-radius: 2em;
     border-style: none;
@@ -153,7 +153,7 @@
 }
 .side_col_heading {
     font-family: var(--font-dongle);
-    font-size: 2em;
+    font-size: var(--font-48);
     line-height: 80.8%;
     letter-spacing: 0%;
     font-weight: 400;
@@ -163,7 +163,7 @@
 .side_col_para {
     font-family: var(--font-dm);
     font-weight: 400;
-    font-size: 1em;
+    font-size: var(--font-20);
     line-height: 106%;
     letter-spacing: -1%;
     color: white;
@@ -226,7 +226,7 @@
 .use_case_cont > h1 {
     font-family: var(--font-dm);
     font-weight: 900;
-    font-size: 3.5em;
+    font-size: var(--font-64);
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 5;
@@ -244,14 +244,14 @@
 }
 .use_case_meta > p:last-child {
     font-family: var(--font-dm);
-    font-size: 1.2em;
+    font-size: var(--font-24);
     line-height: 106%;
     font-weight: 400;
     letter-spacing: -1%;
 }
 .use_case_meta > p:first-child{
     font-family: var(--font-dongle);
-    font-size: 2em;
+    font-size: var(--font-48);
     letter-spacing: -1%;
     font-weight: bold;
 }
