@@ -3,43 +3,18 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-dm: 'DM Sans', sans-serif;
+  --font-dongle: 'Dongle', sans-serif;
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground: #F5F9FC;
+  --background-primary: #0669FD;
+  --background-secondary: #0A2540;
+  --background-dark: #1C1C1C;
+  --background-light: #535353;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
-
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+  --gradient-primary: linear-gradient(90deg, #735DF0, #FA4197, #0BCDFA);
+  --gradient-secondary: linear-gradient(180deg, rgba(250,65,151,0.5187324929971988) 0%, rgba(255,255,255,0.3842787114845938) 19%);
+  
 }
 
 * {
