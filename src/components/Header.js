@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import Dropdown from './Dropdown'
+import Link from "next/link";
 
 const use_cases = ["Deep Tech Product Development", "Enabling Data Privacy in Machine Learning Model", "Better Language Transcription and Translation Services"]
 const use_cases_routes = ["/usecase/DeepTech", "/usecase/EnablingData", "/usecase/DeepTech"]
@@ -24,7 +25,9 @@ export default function Header() {
 
         {/* this section contains logo of the company */}
         <div className='logo_section'>
-          <Image className='logo_image' src="/image_assets/logo.svg" width={171.86} height={99} alt="company-logo" />
+          <Link href={"/"}>
+            <Image className='logo_image' src="/image_assets/logo.svg" width={171.86} height={99} alt="company-logo" />
+          </Link>
         </div>
 
         {/* heading section */}
@@ -55,7 +58,11 @@ export default function Header() {
           </div>
 
           <div className='dropdown'>
-            <li className='header_text heading'>Blog</li>
+            <li className='header_text heading'>
+              <a href={"https://medium.com/"} target={"_blank"} rel={"noreferrer"}>
+                Blog
+              </a>
+            </li>
           </div>
 
         </ul>
