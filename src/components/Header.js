@@ -6,13 +6,13 @@ const use_cases = ["Deep Tech Product Development", "Enabling Data Privacy in Ma
 const use_cases_routes = ["/usecase/DeepTech", "/usecase/EnablingData", "/usecase/DeepTech"]
 
 const industries = ["Healthcare", "Retail", "Agriculture", "Conversational AI", "Security and Privacy in AI"]
-const industries_routes = ["/industries/HealthCare", "industries/Retail", "industries/Agriculture", "industries/ConversationalAI", "industries/Security"]
+const industries_routes = ["/industries/HealthCare", "/industries/Retail", "/industries/Agriculture", "/industries/ConversationalAI", "/industries/Security"]
 
 const research = ["Publications", "Research Team"]
-const research_routes = ["/research/Publication", "research/ResearchTeam"]
+const research_routes = ["/research/Publication", "/research/ResearchTeam"]
 
 const company = ["About us", "Contact us", "Carrers"]
-const company_routes = ["company/AboutUs", "company/ContactUs", "company/Carrers"]
+const company_routes = ["/company/AboutUs", "/company/ContactUs", "/company/Carrers"]
 
 
 export default function Header() {
