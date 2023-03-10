@@ -56,9 +56,12 @@ export default function Header() {
 
         {/* button section */}
         <div className='button_section'>
-          <div className='header_btn'>
+          {/* <div className='header_btn'>
             <p className='header_text button_text'>Get in touch</p>
-          </div>
+          </div> */}
+          <button className='header_btn'>
+            Get in touch
+          </button>
         </div>
       </div>
     </div>
