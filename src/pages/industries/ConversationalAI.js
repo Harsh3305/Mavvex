@@ -1,7 +1,7 @@
-import styles from "@/styles/ConventionalAi.module.css"
+import styles from "@/styles/ConversationalAI.module.css"
 import MainContent from "@/components/industryComponents/MainContent";
 import UseCases from "@/components/industryComponents/UseCases";
-export default function ConventionalAI() {
+export default function ConversationalAI() {
     const data = [
         {
             heading: "Instant access to patients' data",
@@ -20,7 +20,7 @@ export default function ConventionalAI() {
     return <div className={styles.main}>
         <div className={styles.container}>
             <MainContent
-                industryType={"Conventional Ai"}
+                industryType={"Conversational Ai"}
                 content={"Artificial intelligence (AI) is transforming the healthcare industry by enabling faster," +
                     " more accurate diagnosis, and treatment of diseases. AI-powered tools such as machine learning" +
                     " algorithms and natural language processing can analyze vast amounts of medical data, including" +
