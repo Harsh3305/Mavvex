@@ -13,7 +13,7 @@ const research = ["Publications", "Research Team"]
 const research_routes = ["/research/Publication", "/research/ResearchTeam"]
 
 const company = ["About us", "Contact us", "Carrers"]
-const company_routes = ["/company/AboutUs", "/company/ContactUs", "/company/Carrers"]
+const company_routes = ["/company/AboutUs", "/company/ContactUs", "/company/Careers"]
 
 
 export default function Header() {
