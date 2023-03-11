@@ -24,8 +24,33 @@ return (
                 We’re looking for bright, proactive, driven, and naturally curious people to join our team.
                 </p>
             </div>
+
+
             
             </div>
+            <div>
+                <h2 className={styles.sub}>
+                    Are you ready to grow with Us ?
+                </h2>
+            </div>
+
+            <div className={styles.rolescont}>
+                <h1 className={styles.roles}>
+                    Roles
+                </h1>
+
+                <h2 className={styles.subhead}>
+                    Engineering
+                </h2>
+
+                <div className={styles.subhead1}>
+                    
+                </div>
+                <div className={styles.subhead2}>
+                    
+                </div>
+            </div>
+
             
             </div>
 
@@ -35,7 +60,22 @@ return (
 
             <div className={styles.imgcont}>
             
-            </div>         
+            </div>
+
+            <div className={styles.rolescont2}>
+
+                <h2 className={styles.subhead}>
+                    Research & Developement
+                </h2>
+
+                <div className={styles.subhead3}>
+                    
+                </div>
+                <div className={styles.subhead4}>
+                    
+                </div>
+            </div>
+         
 
 
             </div>
