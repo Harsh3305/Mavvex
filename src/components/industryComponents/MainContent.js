@@ -1,11 +1,11 @@
 import styles from "@/styles/industryComponent/MainContent.module.css"
 import Image from "next/image";
 
-export default function MainContent ({industryType, content, imageUrl}) {
+export default function MainContent ({name, industryType, content, imageUrl}) {
     return <div className={styles.main}>
         <div className={styles.container}>
             <div className={styles.industries}>
-                Industries
+                {name}
             </div>
             <div className={styles.industryType}>
                 {industryType}
