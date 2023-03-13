@@ -44,10 +44,10 @@ return (
                 </h2>
 
                 <div className={styles.subhead1}>
-                    
+                    SDE
                 </div>
                 <div className={styles.subhead2}>
-                    
+                    ML Engineer
                 </div>
             </div>
 
@@ -69,10 +69,10 @@ return (
                 </h2>
 
                 <div className={styles.subhead3}>
-                    
+                    Research Fellow
                 </div>
                 <div className={styles.subhead4}>
-                    
+                Research Engineer
                 </div>
             </div>
          
