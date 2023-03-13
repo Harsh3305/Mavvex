@@ -20,6 +20,7 @@ export default function HealthCare() {
     return <div className={styles.main}>
         <div className={styles.container}>
             <MainContent
+                name={"Industries"}
                 industryType={"Agriculture"}
                 content={"Artificial intelligence (AI) is transforming the healthcare industry by enabling faster," +
                     " more accurate diagnosis, and treatment of diseases. AI-powered tools such as machine learning" +

@@ -1,4 +1,4 @@
-import styles from "@/styles/ConversationalAI.module.css"
+import styles from "@/styles/Agriculture.module.css"
 import MainContent from "@/components/industryComponents/MainContent";
 import UseCases from "@/components/industryComponents/UseCases";
 export default function ConversationalAI() {
@@ -20,6 +20,7 @@ export default function ConversationalAI() {
     return <div className={styles.main}>
         <div className={styles.container}>
             <MainContent
+                name={"Industries"}
                 industryType={"Conversational Ai"}
                 content={"Artificial intelligence (AI) is transforming the healthcare industry by enabling faster," +
                     " more accurate diagnosis, and treatment of diseases. AI-powered tools such as machine learning" +
