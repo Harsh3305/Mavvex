@@ -1,4 +1,4 @@
-import styles from "@/styles/Agriculture.module.css"
+import styles from "@/styles/Industries.module.css"
 import MainContent from "@/components/industryComponents/MainContent";
 import UseCases from "@/components/industryComponents/UseCases";
 export default function Security() {
