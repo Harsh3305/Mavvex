@@ -1,9 +1,13 @@
 import styles from "@/css/about.module.css";
+import Image from "next/image";
 function About(){
     return(
+
         <div className={styles.maincont}>
+            <Image className={styles.bgimg} src="/image_assets/bg.png" width={50} height={50} />
+
             <div className={styles.titlecont}>
-                <h1 className={styles.title}>About</h1>
+                <h6 className={styles.title}>About Us</h6>
             </div>
 
             <div className={styles.left}>
@@ -16,6 +20,8 @@ function About(){
 
 
                 We’re looking for bright, proactive, driven, and naturally curious people to join our team.
+                The Mavvex Team develops cutting-edge technology that helps global eCommerce companies overcome complex challenges.
+
                 </p>
             </div>
 
@@ -28,16 +34,17 @@ function About(){
             </div>  
             <div className={styles.right}>
                 
-                <div className={styles.imgcont}></div>
+                <Image className={styles.imgcont} src = "/image_assets/building2.png" height={650} width={500}/>
             </div>
 
             <div>
                 <h1 className={styles.title2}>Meet The Team</h1>
             </div>
-
+            <div className={styles.parent1}>
             <div className={styles.left2}></div>
             <div className={styles.middle}></div>
             <div className={styles.right2}></div>
+            </div>
 
 
             <div className={styles.left3}>Rohan Duggal</div>
@@ -49,8 +56,9 @@ function About(){
             <div className={styles.right4}>CFO</div>
 
             <div className={styles.title3}>
-                <h1>Want to Join Us?</h1>
-                <h1>go to our careers page.</h1>
+                <div>Want to Join Us?</div> 
+                <div>go to our careers page.</div>
+                
             </div>
 
             <div>
