@@ -1,4 +1,5 @@
 import styles from "@/css/about.module.css";
+import loadData from "@/dao/loadData";
 import Image from "next/image";
 function About(){
     return(
@@ -16,11 +17,10 @@ function About(){
                 <h2 className={styles.h2}>Our Mission</h2>
             <div>
                 <p className={styles.para}>
-                ML models are being frequently used for diagnosis of different diseases in the clinical domain. If subject selection is done incorrectly, the dataset can end up being heavily imbalanced and skewed. With betterdata, your datasets can be balanced to ensure that your AI models are not trained on the wrong data.
-
+                {loadData("aboutPagePara1")}
                 </p>
-                    <h6 className={styles.line}>ML models are being frequently used for diagnosis of different diseases in the clinical domain.</h6>
-                <p className={styles.para}>Lorem ipsum dolor sit amet consectetur. Vitae ut in viverra ullamcorper mattis dictum. Gravida odio et rhoncus ut nec nunc. Commodo nunc at massa magna est amet volutpat in. Lorem mattis malesuada iaculis ac in tempus pharetra vitae volutpat. Lectus ipsum elit ut dui.</p>
+                    <h6 className={styles.line}>{loadData("aboutPagePara2")}</h6>
+                <p className={styles.para}>{loadData("aboutPagePara3")}</p>
             </div>
 
 
