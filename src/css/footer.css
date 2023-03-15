@@ -2,11 +2,11 @@
     /* margin-top: 20px; */
     height: 526px;
     width: 100vw;
-    background-color: white;
+    background-color: #F5F9FC;
     padding: 50px 0px 50px 0px;
 }
 .footer_inner_body {
-    background-color: white;
+    background-color: #F5F9FC;
     height: 100%;
     display: flex;
     align-items: center;
@@ -43,7 +43,7 @@
     display: grid;
     place-items: center;
     border-radius: 0.6em;
-    background-color: white;
+    background-color: #F5F9FC;
     transition: transform 3ms ease-in-out;
     cursor: pointer;
     margin-top: 1em;
@@ -69,11 +69,11 @@
     font-weight: 400;
     font-size: 2em;
     color: black;
-    background-color: white;
+    background-color: #F5F9FC;
 }
 .srvc_list{
     list-style: none;
-    background-color: white;
+    background-color: #F5F9FC;
     margin-top: 1.5em;
 }
 .srvc_list_items {
