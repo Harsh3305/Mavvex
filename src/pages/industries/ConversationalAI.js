@@ -9,10 +9,7 @@ export default function ConversationalAI() {
             <MainContent
                 name={"Industries"}
                 industryType={"Conversational Ai"}
-                content={"Artificial intelligence (AI) is transforming the healthcare industry by enabling faster," +
-                    " more accurate diagnosis, and treatment of diseases. AI-powered tools such as machine learning" +
-                    " algorithms and natural language processing can analyze vast amounts of medical data, including" +
-                    " patient records, medical images, and genomic data, to identify patterns and make predictions."}
+                content={loadData("conversationalContent")}
                 imageUrl={"/image_assets/industries_image/Conversation.svg"}
             />
             <UseCases
