@@ -10,7 +10,7 @@ export default function Publication() {
                 name={"Research"}
                 industryType={"Publication"}
                 content={loadData("publicationContent")}
-                imageUrl={"/image_assets/research_image/team.svg"}
+                imageUrl={"/image_assets/research_image/publication.svg"}
             />
             <UseCases
                 data={data}
