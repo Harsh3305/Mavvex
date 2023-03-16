@@ -1,11 +1,13 @@
-import Abouttitle from "@/components/Abouttitle"
-import Aboutbody from "@/components/Aboutbody"
+import AboutUs from "@/components/About"
+// import Abouttitle from "@/components/Abouttitle"
+// import Aboutbody from "@/components/Aboutbody"
 
-export default function AboutUs() {
+export default function About() {
     return (
         <div>
-            <Abouttitle></Abouttitle>
-            <Aboutbody></Aboutbody>
+            {/* <Abouttitle></Abouttitle> */}
+            <AboutUs></AboutUs>
+
             
 
         </div>
