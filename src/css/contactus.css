@@ -2,12 +2,11 @@
     background-color: white;
     height: 100vh;
 }
-.image_div {
+.contact_image_div {
     /* aspect-ratio: 9/16; */
     object-fit: cover;
     width: 100%;
     height: calc(473px - 473*0.2px);
-    background-color: red;
 }
 .form_outer_most {
     position: relative;
@@ -125,5 +124,17 @@
     margin: 0.5em;
 }
 .logo {
-    background-color: white;
+    /* background-color: white; */
+}
+.cmp_info_form {
+    margin-left: 3em;
+    margin-right: 5em;
+    margin-top: 2em;
+}
+.cmp_info_form > p {
+    color: white;
+}
+.trans {
+    background-color: transparent;
+    border-color: white;
 }

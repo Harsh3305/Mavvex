@@ -4,7 +4,7 @@ export default function ContactUs() {
 
     return <div className="contact_body">
         <Image 
-        className="image_div"
+        className="contact_image_div"
         src={"/image_assets/background_image.jpg"}
             width={200} height={200} alt="back-img"
         />
@@ -25,20 +25,20 @@ export default function ContactUs() {
                         <div className="dot"></div>
                     </div>
 
-                    <div className="company_info">
-                        <Image className="logo" src='/image_assets/logo.svg' width={171.86} height={99} alt="mavvex_logo"/>
+                    <div className="cmp_info_form">
+                        <Image className="logo" src='/image_assets/logo_white.svg' width={171.86} height={99} alt="mavvex_logo"/>
                         <p className='address_div footer_text'>1197 Sainik Colony Sector 49, Faridabad HR 121001 India</p>
                         <p className='footer_email footer_text'>Email: admin@mavvexlabs.com</p>
                         <p className='footer_text_high footer_text'>Follow us!</p>
                         <div className='social_btn'>
-                          <div className='footer_icons_btn'>
-                            <Image src="/image_assets/linkedin.svg"  width={40} height={40} className="image" alt='linkedin-icon'/>
+                          <div className='footer_icons_btn trans'>
+                            <Image src="/image_assets/linkedin_white.svg"  width={40} height={40} className="image" alt='linkedin-icon'/>
                           </div>
-                          <div className='footer_icons_btn'>
-                            <Image src="/image_assets/youtube.svg"  width={37.93} height={26.73} className="image" alt='youtube-icon'/>
+                          <div className='footer_icons_btn trans'>
+                            <Image src="/image_assets/youtube_white.svg"  width={37.93} height={26.73} className="image" alt='youtube-icon'/>
                           </div>
-                          <div className='footer_icons_btn'>
-                            <Image src="/image_assets/twitter.svg" width={40} height={32.49} className="image" alt='twitter-icon'/>
+                          <div className='footer_icons_btn trans'>
+                            <Image src="/image_assets/twitter_white.svg" width={40} height={32.49} className="image" alt='twitter-icon'/>
                           </div>
                         </div>
                     </div>
