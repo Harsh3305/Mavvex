@@ -109,7 +109,7 @@ function Aboutbody() {
 
     </div>
 
-    <div class={styles.socialcontainer}>
+    <div className={styles.socialcontainer}>
       <h3>Support Us At</h3>
       <a href="https://www.youtube.com"
         className={styles.youtube}>

@@ -1,0 +1,140 @@
+.contact_body {
+    background-color: white;
+    height: 100vh;
+}
+.contact_image_div {
+    /* aspect-ratio: 9/16; */
+    object-fit: cover;
+    width: 100%;
+    height: calc(473px - 473*0.2px);
+}
+.form_outer_most {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.form_outer {
+    position: absolute;
+    width: calc(1454px - 1454*0.2px);
+    height: calc(733px - 733*0.2px);
+    /* background-color: red; */
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2em;
+    display: flex;
+    box-shadow: 0px 1px 12px rgba(0,0,0,0.2);
+}
+.form_left {
+    flex: 0.35;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-primary);
+    position: relative;
+    border-radius: 2em 0 0 2em;
+}
+.contact_form {
+    /* position: relative; */
+    flex: 0.65;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 0 2em 2em 0em;
+    display: grid;
+    grid-template-columns: [first] calc(75px + 3em) [col1] 14em [col2] auto [col3] 14em [col4] calc(75px + 3em) [end];
+    grid-template-rows: [first] calc(75px + 3em) [row1] 5em [row2] 2em [row3] 5em [row4] 2em [row5] 6em [row6] auto [end];
+}
+.contact_icon {
+    padding: 1em;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateX(50%) translateY(-50%);
+}
+.contact_form > label {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form > label:nth-last-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.contact_form > label > p {
+    font-family: var(--font-dongle);
+    font-size: var(--font-35);
+}
+.contact_form > label > input {
+    background-color: #EFEFEF;
+    border: none;
+    flex: 1;
+    border-radius: 0.3em;
+    font-family: var(--font-dongle);
+    font-size: var(--font-35);
+    /* line-height: 28%; */
+}
+.contact_form > button {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: var(--background-primary);
+    color: white;
+    font-family: var(--font-dongle);
+    font-size: var(--font-35);
+    border: 1px solid var(--background-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    margin-top: 1.5em;
+    border-radius: 2em;
+    cursor: pointer;
+}
+.contact_form > button > span {
+    margin-left: 0.5em;
+    /* background-color: red; */
+    display: flex;
+}
+.form_left > h1 {
+    font-family: var(--font-dongle);
+    font-size: var(--font-xxl);
+    color: white;
+    text-align: center;
+    margin-top: 0.2em;
+}
+.dot_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0.5em;
+}
+.logo {
+    /* background-color: white; */
+}
+.cmp_info_form {
+    margin-left: 3em;
+    margin-right: 5em;
+    margin-top: 2em;
+}
+.cmp_info_form > p {
+    color: white;
+}
+.trans {
+    background-color: transparent;
+    border-color: white;
+}
