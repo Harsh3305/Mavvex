@@ -1,4 +1,5 @@
 import styles from "@/css/career.module.css";
+import Image from "next/image";
 
 function Careersbody(){
 
@@ -9,11 +10,13 @@ return (
             {/* <div className={styles.img}>
                 
             </div> */}
-            <div className={styles.contleft}>
             <div className={styles.careercont}>
             <h1 className={styles.container}>
                     Careers
                 </h1>
+            </div>
+            <div className={styles.contleft}>
+            
             <div className={styles.container2}>
                 <h2 className={styles.h2}>JOIN OUR TEAM</h2>
             <div>
@@ -23,6 +26,7 @@ return (
 
                 We’re looking for bright, proactive, driven, and naturally curious people to join our team.
                 </p>
+                
             </div>
 
 
@@ -33,8 +37,8 @@ return (
                     Are you ready to grow with Us ?
                 </h2>
             </div>
-
-            <div className={styles.rolescont}>
+            
+            {/* <div className={styles.rolescont}>
                 <h1 className={styles.roles}>
                     Roles
                 </h1>
@@ -49,20 +53,21 @@ return (
                 <div className={styles.subhead2}>
                     ML Engineer
                 </div>
-            </div>
+            </div> */}
 
             
             </div>
-
+            {/* left cont div */}
 
             <div className={styles.contright}>
 
 
-            <div className={styles.imgcont}>
+            <Image classname={styles.imgcont} src="/image_assets/Rectangle_48.png" height={590} width={490}/>
             
             </div>
+            {/* right container div */}
 
-            <div className={styles.rolescont2}>
+            {/* <div className={styles.rolescont2}>
 
                 <h2 className={styles.subhead}>
                     Research & Developement
@@ -74,24 +79,66 @@ return (
                 <div className={styles.subhead4}>
                 Research Engineer
                 </div>
+            </div> */}
+
+            <div className={styles.roletitle}>
+                Roles
             </div>
+            {/* <div className={styles.parent1}> */}
+                <div className={styles.col1}>
+                    Engineering
+                    </div>
+
+                <div className={styles.col2}>
+                Research & Developement
+                </div>
+
+                <div className={styles.col3}>
+                Business
+                </div>
+
+
+
+                <div className={styles.subcol1}>
+                    SDE
+                    <Image className={styles.arrow} src="/image_assets/Vector20.png" height={10} width={10}/>
+                </div>
+
+                <div className={styles.subcol2}>
+                Research Fellow
+                <Image className={styles.arrow} src="/image_assets/Vector20.png" height={10} width={10}/>
+                </div>
+
+                <div className={styles.subcol3}>
+                Business
+                <Image className={styles.arrow} src="/image_assets/Vector20.png" height={10} width={10}/>
+                </div>
+
+
+
+                <div className={styles.subcol1}>
+                    ML Engineer
+                    <Image className={styles.arrow} src="/image_assets/Vector20.png" height={10} width={10}/>
+                </div>
+
+                <div className={styles.subcol2}>
+                Research Engineer
+                <Image className={styles.arrow} src="/image_assets/Vector20.png" height={10} width={10}/>
+                </div>
+
+
+            {/* </div> */}
          
 
 
-            </div>
-
-
-
-
-    </div>
-
-        
 
 
 
 
 
     </div>
+    // main cont div
+
     
 
 )
