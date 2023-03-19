@@ -32,7 +32,7 @@ export default function Header() {
   else if (currentPath.includes("industries")) {
     setPath(1)
   }
-  else if (currentPath.includes("customers")) {
+  else if (currentPath.includes("Customer")) {
     setPath(2)
   }
   else if (currentPath.includes("research")) {
