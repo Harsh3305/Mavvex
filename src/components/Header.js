@@ -81,7 +81,10 @@ export default function Header() {
           </div>
 
           <div className='dropdown'>
-            <li className='header_text heading'>{tags[2]}</li>
+            <li className='header_text heading'>{
+              <Link href={"/Customer"}>
+                {tags[2]}
+            </Link>}</li>
           </div>
 
           <div className='dropdown'>
