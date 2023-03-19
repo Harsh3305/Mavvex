@@ -1,0 +1,198 @@
+.customer_main {
+    padding-top: 40px;
+}
+.page_intro {
+    margin: 0em 128px 0em 128px;
+    display: flex;
+}
+.left_container {
+    flex: 0.6;
+}
+.left_container > h1 {
+    font-family: var(--font-dongle);
+    font-size: calc(var(--font-xxl) + 20px);
+    color: var(--background-primary);
+    letter-spacing: -3%;
+    font-weight: bold;
+    line-height: 99.2%;
+}
+.left_container > p {
+    font-family: var(--font-dongle);
+    font-size: var(--font-48);
+    color: #535353;
+    line-height: 80.8%;
+    letter-spacing: -1%;
+    font-weight: 400;
+    width: 80%;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+.left_container > button {
+    font-family: var(--font-dongle);
+    font-size: var(--font-35);
+    color: white;
+    background-color: var(--background-primary);
+    padding: 0em 1em 0em 1em;
+    border-radius: 2em;
+    border: 1px solid var(--background-primary);
+}
+.right_container {
+    flex: 0.4;
+}
+.banner {
+
+    width: 100%;
+    background-color: #F4F5F7;
+    padding: 1em 0em 1em 0em;
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+    /* justify-content: center; */
+}
+/* .banner_img {
+    background-image: url("/image_assets/banner_img.png");
+    width: 1004px;
+    height: 200px;
+    background-repeat: no-repeat;
+} */
+.banner > p {
+    font-family: var(--font-dongle);
+    font-size: var(--font-48);
+    font-weight: bold;
+    line-height: 106.2%;
+    margin-left: 128px;
+    margin-right: 40px;
+}
+.banner > p > span {
+    padding: 0em 0.4em;
+    color:white;
+    background-color: var(--background-primary);
+    border-radius: 1em;
+}
+.banner_img {
+    border-left: 2px solid #D7D7D7;
+}
+.middle_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0px;
+}
+.middle_heading > h1 {
+    text-align: center;
+    width: 80%;
+    font-family: var(--font-dm);
+    font-size: var(--font-64);
+    font-weight: medium;
+    line-height: 130%;
+    padding: 40px 0px;
+}
+.middle_heading > p {
+    padding: 10px 0px;
+    text-align: center;
+    width: 60%;
+    font-family: var(--font-dongle);
+    font-size: var(--font-35);
+    font-weight: 400;
+    line-height: 106%;
+    letter-spacing: -2%;
+}
+.customer_section {
+    padding: 20px 0px;
+}
+.customer_section > h3 {
+    margin-left: 128px;
+    font-size: var(--font-35);
+    font-family: var(--font-dm);
+    font-weight: bold;
+    line-height: 126.2%;
+}
+.customers_img {
+    margin-left: 128px;
+    margin-right: 128px;
+    width: calc(100% - 256px);
+    object-fit: contain;
+}
+.review_section {
+    /* padding: 100px 0px; */
+    margin: 250px 0px;
+}
+.review_section > h2 {
+    font-size: var(--font-35);
+    font-family: var(--font-dm);
+    font-weight: bold;
+    line-height: 126.2%;
+    text-align: center;
+}
+.review_container{
+    margin: 80px 128px;
+    width: calc(100% - 256px);
+    /* background-color: red; */
+}
+.arrow_cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.review_card {
+    height: 400px;
+    width: 800px;
+    display: flex;
+    border: 1px solid #DBDBDB;
+}
+.review_left {
+    width: 70%;
+    height: 100%;
+    background-color: #F4F5F7;
+}
+.review_right {
+    width: 30%;
+    height: 100%;
+    background-color: #00A991;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.review_right > p {
+    font-family: var(--font-monts);
+    font-size: var(--font-24);
+    font-weight: bold;
+    line-height: 129.8%;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+.quotation_mark {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.review_left > p {
+    font-family: var(--font-monts);
+    font-size: var(--font-35);
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 40px;
+    line-height: 1.5;
+}
+.profile {
+    margin-top: 20px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+.profile_photo {
+    object-fit: cover;
+    border-radius: 50%;
+}
+.user_info {
+    padding-left: 10px;
+}
+.user_info > h2 {
+    font-family: var(--font-monts);
+    font-size: var(--font-35);
+    font-weight: 500;
+}
