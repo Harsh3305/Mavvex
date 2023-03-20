@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useRouter } from 'next/router';
 
 const use_cases = ["Deep Tech Product Development", "Enabling Data Privacy in Machine Learning Model", "Better Language Transcription and Translation Services"]
-const use_cases_routes = ["/usecase/DeepTech", "/usecase/EnablingData", "/usecase/DeepTech"]
+const use_cases_routes = ["/usecase/DeepTech", "/usecase/EnablingData", "/usecase/BetterData"]
 
 const industries = ["Healthcare", "Retail", "Agriculture", "Conversational AI", "Security and Privacy in AI"]
 const industries_routes = ["/industries/HealthCare", "/industries/Retail", "/industries/Agriculture", "/industries/ConversationalAI", "/industries/Security"]

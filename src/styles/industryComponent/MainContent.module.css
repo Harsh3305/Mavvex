@@ -7,24 +7,29 @@
 .container {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 .industries {
-    font-family: 'DM Sans', sans-serif, monospace;
+    font-family: var(--font-dm);
     font-size: 36px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .industryType {
     color: #0669FD;
-    font-family: 'Dongle', sans-serif;
-    font-size: 80px;
+    font-family: var(--font-dongle);
+    font-size: var(--font-64);
+    font-weight: bolder;
 }
 .image {
     margin-left: 100px;
+    max-height: 40vh;
+    flex: 1;
 }
 .content {
     width: 80%;
     font-size: x-large;
-    font-weight: lighter;
+    font-weight: normal;
+    color: #535353;
     font-family: 'Dongle', sans-serif;
 }
 .buttons {
