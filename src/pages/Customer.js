@@ -1,13 +1,15 @@
 import React from 'react'
 import styles from "../styles/Customer.module.css"
 import Image from 'next/image'
+import loadData from '@/dao/loadData';
 function Customer() {
+  const para = loadData("CustomerPageIntroPara")
   return (
     <div className={styles.customer_main}>
         <div className={styles.page_intro}>
             <div className={styles.left_container}>
                 <h1>Customers</h1>
-                <p>Artificial intelligence (AI) is transforming the healthcare industry by enabling faster, more accurate diagnosis, and treatment of diseases. AI-powered tools such as machine learning algorithms and natural language processing can analyze vast amounts of medical data, including patient records, medical images, and genomic data, to identify patterns and make predictions.</p>
+                <p>{!para?"":`${para}`}</p>
                 <button className='cust_btn'>Case Studies</button>
             </div>
             <Image className={styles.right_container} 
@@ -61,7 +63,7 @@ function Customer() {
                     alt="quotation-mark"
                     className={styles.quotation_mark}
                   />
-                  <p>Mavvex is a crucial GTM partner that's helping us shape our future, not simply react to it. It's played a key role in our sales team's success.</p>
+                  <p>{loadData("CustomerFeedback")}</p>
                   <div className={styles.profile}>
                     <Image 
                     src="/image_assets/customers/usman-yousaf-q2q5CdLuWnI-unsplash.jpg"
