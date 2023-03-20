@@ -32,7 +32,7 @@ export default function Header() {
   else if (currentPath.includes("industries")) {
     setPath(1)
   }
-  else if (currentPath.includes("customers")) {
+  else if (currentPath.includes("Customer")) {
     setPath(2)
   }
   else if (currentPath.includes("research")) {
@@ -81,7 +81,10 @@ export default function Header() {
           </div>
 
           <div className='dropdown'>
-            <li className='header_text heading'>{tags[2]}</li>
+            <li className='header_text heading'>{
+              <Link href={"/Customer"}>
+                {tags[2]}
+            </Link>}</li>
           </div>
 
           <div className='dropdown'>
