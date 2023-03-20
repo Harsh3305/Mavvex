@@ -4,6 +4,7 @@ export default function Feature ({image_url, content}) {
     return <div className={styles.main}>
         <div className={styles.imageContainer}>
             <Image
+                className={styles.image}
                 src={image_url}
                 height={100}
                 width={100}
