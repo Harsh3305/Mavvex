@@ -9,7 +9,7 @@ export default function EnablingData() {
                 name={"Use Cases"}
                 industryType={"Enabling Data Privacy in Machine Learning"}
                 content={loadData("useCasesContent")}
-                imageUrl={"/image_assets/usecases_image/language.svg"}
+                imageUrl={"/image_assets/usecases_image/network.svg"}
             />
             <Works/>
         </div>
