@@ -2,7 +2,7 @@ import MainContent from "@/components/industryComponents/MainContent";
 import loadData from "@/dao/loadData";
 import styles from "@/styles/Industries.module.css"
 import Works from "@/components/usecase/works";
-export default function Comp() {
+export default function DeepTech() {
     return <div className={styles.main}>
         <div className={styles.container}>
             <MainContent
