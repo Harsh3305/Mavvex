@@ -2,8 +2,11 @@
     background-color: #edeaea;
     display: flex;
     flex-direction: column;
+    font-family: var(--font-dm);
+    font-size: var(--font-24);
+    font-weight: bold;
     width: 20vw;
-    height: 30vh;
+    min-height: 40vh;
     border-radius: 30px;
     transition-duration: 500ms;
 }
