@@ -32,7 +32,7 @@
 .header_text {
     font-family: 'Dongle', sans-serif;
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: var(--font-35);
 }
 .heading {
     display: flex;
@@ -60,7 +60,7 @@
 } */
 .header_btn {
     font-family: var(--font-dongle);
-    font-size: 1.6em;
+    font-size: var(--font-35);
     padding: 0 1.5em;
     border-radius: 2em;
     border-style: none;
@@ -75,7 +75,7 @@
 }
 .button_text {
     color: white;
-    font-size: 1.8em;
+    font-size: var(--font-35);
 }
 
 .dropdown {
@@ -102,7 +102,7 @@
     text-decoration: none;
     font-weight: 400;
     font-family: 'Dongle', sans-serif;
-    font-size: 1.4em;
+    font-size: var(--font-24);
     line-height: 70%;
     padding: .5em;
     color: #535353;

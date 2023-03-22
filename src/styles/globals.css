@@ -42,3 +42,19 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 1440px) {
+  :root{
+    --font-xxl: 4em;
+    --font-64: 2.9em;
+    --font-48: 1.2em;
+    --font-35: 1em;
+    --font-24: 0.6em;
+    --font-20: 0.4em;
+  }
+  .header_inner_body {
+    background-color: red;
+    margin: 0 100px 0 100px;
+  }
+  
+}
+
