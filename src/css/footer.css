@@ -24,7 +24,7 @@
 .footer_text {
     font-family: 'Dongle', sans-serif;
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: var(--font-35);
     color: #535353;
     line-height: 28px;
 }
@@ -67,7 +67,7 @@
 .company_info_title{
     font-family: 'Dongle', sans-serif;
     font-weight: 400;
-    font-size: 2em;
+    font-size: var(--font-48);
     color: black;
     background-color: #F5F9FC;
 }
@@ -78,4 +78,41 @@
 }
 .srvc_list_items {
     margin-top: 0.6em;
+}
+
+@media screen and (max-width: 1440px) {
+    .footer_inner_body {
+        margin: 0 4em 0 4em;
+    }
+}
+
+@media (width >=768px) and (width <=1024px) {
+    .footer_inner_body {
+        margin: 0 2em 0 2em;
+    }
+    .footer_icons_btn {
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 0.4em;
+    }
+    .footer_icons_btn > img {
+        object-fit: contain;
+        width: 25px;
+        transform: scale(1);
+    }
+    .footer_logo {
+        object-fit: contain;
+        width: clamp(120px, 1%, 171.85px);
+    }
+    .cmp_srvc {
+        padding-right: 16px;
+    }
+}
+@media (width < 768px) and (width >= 320px) {
+    .footer_body {
+        height: max-content;
+    }
+    .footer_inner_body {
+        margin: 0 2em 0 2em;
+    }
 }

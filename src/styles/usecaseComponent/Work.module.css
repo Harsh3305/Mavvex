@@ -1,6 +1,10 @@
 .main {
     margin-top: 5%;
 }
+.main > h1 {
+    font-family: var(--font-dm);
+    /* font-size: var(--font-48); */
+}
 .container {
     margin-top: 20px;
     display: flex;

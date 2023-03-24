@@ -37,7 +37,7 @@ export default function Title() {
         <div className="comp_inner_div">
             <div className="comp_left  comp_col">
                 <div className="side_col">
-                    <Image src={"/image_assets/community_icon.svg"} width={80} height={80} alt="community icon"/>
+                    <Image src={"/image_assets/community_icon.svg"} width={80} height={80} alt="community icon" className="community_icon"/>
                     <p className="side_col_heading">
                     Faster data, faster innovation
                     </p>
@@ -55,6 +55,7 @@ export default function Title() {
                     <div className="middle_col_m">
                         <Image src="/image_assets/thunder_icon.svg" 
                             width={80} height={80} alt="thunder-icon"
+                            className="thunder_icon"
                         />
                     </div>
                     <div className="middle_col_r">
@@ -65,7 +66,7 @@ export default function Title() {
             </div>
             <div className="comp_right comp_col">
                 <div className="side_col">
-                    <Image src={"/image_assets/community_icon.svg"} width={80}  height={80} alt="community icon"/>
+                    <Image src={"/image_assets/community_icon.svg"} width={80}  height={80} alt="community icon" className="community_icon"/>
                     <p className="side_col_heading">
                     Anonymized data with maximum utility
                     </p>
@@ -82,7 +83,7 @@ export default function Title() {
         </div>
         <div className="use_case_cont">
             <div className="image_div">
-                <Image src={"/image_assets/community_icon.svg"} height={80} width={80} alt={"community-icon"} />
+                <Image src={"/image_assets/community_icon.svg"} height={80} width={80} alt={"community-icon"} className="community_icon" />
             </div>
             <h1>
                 Enable your team to move faster and safer

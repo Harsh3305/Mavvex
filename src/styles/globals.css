@@ -18,11 +18,11 @@
   --gradient-secondary: linear-gradient(180deg, rgba(250,65,151,0.5187324929971988) 0%, rgba(255,255,255,0.3842787114845938) 19%);
   
   --font-xxl: 5em;
+  --font-64: 3.5em;
   --font-48: 2em;
   --font-35: 1.6em;
-  --font-64: 3.5em;
-  --font-20: 1em;
   --font-24: 1.2em;
+  --font-20: 1em;
 }
 
 * {
@@ -42,19 +42,35 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 1440px) {
-  :root{
+@media (width <= 1320px) {
+  :root {
     --font-xxl: 4em;
-    --font-64: 2.9em;
-    --font-48: 1.2em;
-    --font-35: 1em;
-    --font-24: 0.6em;
-    --font-20: 0.4em;
+    --font-64: 3.5em;
+    --font-48: 26px;
+    --font-35: 22px;
+    --font-24: 1.2em;
+    --font-20: 1em;
   }
-  .header_inner_body {
-    background-color: red;
-    margin: 0 100px 0 100px;
-  }
-  
 }
 
+/* @media screen and (width: 2560px) {
+  :root {
+    --font-xxl: 5em;
+    --font-64: 4.5em;
+    --font-48: 2.8em;
+    --font-35: 2.4em;
+    --font-24: 1.2em;
+    --font-20: 1em;
+  }
+} */
+
+@media (width >=768px) and (width <=1024px) {
+  :root {
+    --font-xxl: 3em;
+    --font-64: clamp(36px, 1%, 3.5em);
+    --font-48: clamp(20px, 1%, 26px);
+    --font-35: clamp(18px, 2%, 22px);
+    --font-24: clamp(13px, 1%, 1.2em);
+    --font-20: clamp(10px, 1%, 1em);
+  }
+}

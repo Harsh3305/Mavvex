@@ -7,7 +7,8 @@
 .container {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 0.5;
+    flex-grow: 1;
 }
 .industries {
     font-family: var(--font-dm);
@@ -17,16 +18,18 @@
 .industryType {
     color: #0669FD;
     font-family: var(--font-dongle);
-    font-size: var(--font-64);
+    font-size: var(--font-xxl);
     font-weight: bolder;
 }
 .image {
     margin-left: 100px;
-    max-height: 40vh;
-    flex: 1;
+    object-fit: contain;
+    width: clamp(250px, 20%, 350px);
+    max-width: 350px;
+    flex: 0.5;
 }
 .content {
-    width: 80%;
+    width: 90%;
     font-size: x-large;
     font-weight: normal;
     color: #535353;
@@ -35,16 +38,27 @@
 .buttons {
     margin-top: 30px;
 }
+
 .button {
-    color: white;
+    /* color: white;
     font-size: x-large;
     font-family: 'Dongle', sans-serif;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 20px; */
+
+    font-family: var(--font-dongle);
+    font-size: var(--font-48);
+    padding: 0 1.5em;
+    border-radius: 2em;
+    border-style: none;
+    cursor: pointer;
+    background-color: var(--background-primary);
+    color: white;
+    border: 2px solid var(--background-primary);
 
 }
 .buttonHighlighted {
-    border: none;
+    /* border: none; */
     background-color: #0669FD;
     margin-right: 20px;
 }
@@ -52,4 +66,18 @@
     background-color: white;
     border-color: #0669FD;
     color: #0669FD;
+}
+.buttonHighlighted:hover {
+    background: #0059df;
+    box-shadow: 0px 1px 12px rgba(0,0,0,.11);
+}
+.normalButton:hover {
+    background-color: #5d9eff;
+    color: white;
+    box-shadow: 0px 1px 12px rgba(0,0,0,.11);
+}
+@media (width <= 1600px) {
+    .industryType {
+        line-height: 1.1;
+    }
 }

@@ -5,8 +5,10 @@
     font-family: var(--font-dm);
     font-size: var(--font-24);
     font-weight: bold;
-    width: 20vw;
-    min-height: 40vh;
+    width: 300px;
+    height: 300px;
+
+    /* min-height: 40vh; */
     border-radius: 30px;
     transition: background 1s ease;
     transition-duration: 1s;
@@ -15,7 +17,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .imageContainer {
-    flex: 2;
+    flex: 0.75;
     width: 100%;
     display: flex;
     align-items: center;
@@ -28,7 +30,7 @@
     scale: 1.5;
 }
 .titleContainer {
-    flex: 1;
+    flex: 0.25;
     background-color: #0669FD;
     width: 100%;
     display: flex;
@@ -39,7 +41,15 @@
     border-bottom-right-radius: 30px;
 }
 .title {
-    font-weight: bolder;
+    font-weight: bold;
     color: #FEFEFE;
+    font-family: var(--font-dm);
+    font-size: var(--font-48);
+}
 
+@media (width <= 1320px) {
+    .main{
+        width: 240px;
+        height: 240px;
+    }
 }
