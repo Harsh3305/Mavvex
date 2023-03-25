@@ -37,11 +37,11 @@ export default function Title() {
         <div className="comp_inner_div">
             <div className="comp_left  comp_col">
                 <div className="side_col">
-                    <Image src={"/image_assets/community_icon.svg"} width={80} height={80} alt="community icon" className="community_icon"/>
-                    <p className="side_col_heading">
+                    <Image src={"/image_assets/community_icon.svg"} width={80} height={80} alt="community icon" className="community_icon icon_r"/>
+                    <p className="side_col_heading heading_l">
                     Faster data, faster innovation
                     </p>
-                    <p className="side_col_para">
+                    <p className="side_col_para para_l">
                     Lorem ipsum dolor sit amet consectetur. Elit vel tellus vitae morbi eros facilisis purus. Vitae nibh nunc vel nibh commodo sit quam nascetur purus.
                     </p>
                 </div>
@@ -49,8 +49,12 @@ export default function Title() {
             <div className="comp_middle comp_col">
                 <div className="middle_col">
                     <div className="middle_col_l">
-                        <p className="side_col_heading middle_heading">Safer data with privacy by design</p>
-                        <p className="side_col_para middle_para">Lorem ipsum dolor sit amet consectetur. Elit vel tellus vitae morbi eros facilisis purus. Vitae nibh nunc vel nibh commodo sit quam nascetur purus.</p>
+                        <Image src="/image_assets/thunder_icon.svg" 
+                            width={80} height={80} alt="thunder-icon"
+                            className="thunder_icon icon_l"
+                        />
+                        <p className="side_col_heading middle_heading heading_r">Safer data with privacy by design</p>
+                        <p className="side_col_para middle_para para_r">Lorem ipsum dolor sit amet consectetur. Elit vel tellus vitae morbi eros facilisis purus. Vitae nibh nunc vel nibh commodo sit quam nascetur purus.</p>
                     </div>
                     <div className="middle_col_m">
                         <Image src="/image_assets/thunder_icon.svg" 
@@ -59,18 +63,22 @@ export default function Title() {
                         />
                     </div>
                     <div className="middle_col_r">
-                        <p className="side_col_heading middle_heading">Fairer data, fairer AI</p>
-                        <p className="side_col_para middle_para">Lorem ipsum dolor sit amet consectetur. Elit vel tellus vitae morbi eros facilisis purus. Vitae nibh nunc vel nibh commodo sit quam nascetur purus.</p>
+                        <Image src="/image_assets/thunder_icon.svg" 
+                            width={80} height={80} alt="thunder-icon"
+                            className="thunder_icon icon_r"
+                        />
+                        <p className="side_col_heading middle_heading heading_l">Fairer data, fairer AI</p>
+                        <p className="side_col_para middle_para para_l">Lorem ipsum dolor sit amet consectetur. Elit vel tellus vitae morbi eros facilisis purus. Vitae nibh nunc vel nibh commodo sit quam nascetur purus.</p>
                     </div>
                 </div>
             </div>
             <div className="comp_right comp_col">
                 <div className="side_col">
-                    <Image src={"/image_assets/community_icon.svg"} width={80}  height={80} alt="community icon" className="community_icon"/>
-                    <p className="side_col_heading">
+                    <Image src={"/image_assets/community_icon.svg"} width={80}  height={80} alt="community icon" className="community_icon icon_l"/>
+                    <p className="side_col_heading heading_r">
                     Anonymized data with maximum utility
                     </p>
-                    <p className="side_col_para">
+                    <p className="side_col_para para_r">
                     Lorem ipsum dolor sit amet consectetur. Elit vel tellus vitae morbi eros facilisis purus. Vitae nibh nunc vel nibh commodo sit quam nascetur purus.
                     </p>
                 </div>

@@ -74,3 +74,13 @@ a {
     --font-20: clamp(10px, 1%, 1em);
   }
 }
+@media (width <= 768px) {
+  :root {
+    --font-xxl: 3em;
+    --font-64: clamp(36px, 1%, 3.5em);
+    --font-48: clamp(20px, 1%, 26px);
+    --font-35: clamp(18px, 2%, 22px);
+    --font-24: clamp(13px, 1%, 1.2em);
+    --font-20: clamp(10px, 1%, 1em);
+  }
+}

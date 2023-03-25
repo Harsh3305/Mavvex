@@ -110,7 +110,8 @@
 }
 @media (width < 768px) and (width >= 320px) {
     .footer_body {
-        height: max-content;
+        /* height: max-content; */
+        display: none;
     }
     .footer_inner_body {
         margin: 0 2em 0 2em;
