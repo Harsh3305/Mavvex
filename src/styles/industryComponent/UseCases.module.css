@@ -40,3 +40,31 @@
     color: #535353;
     font-family: 'DM Sans', sans-serif, monospace;
 }
+
+@media (width <= 768px) {
+    .title {
+        font-size: 36px;
+    }
+    .bullet {
+        display: none;
+    }
+    .points {
+        margin-left: 0;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+    }
+    .body{
+        margin-left: 0;
+    }
+    .heading {
+        line-height: 80%;
+        font-size: 32px;
+    }
+    .content {
+        margin-top: 20px;
+        text-align: justify;
+        font-size: 14px;
+    }
+}

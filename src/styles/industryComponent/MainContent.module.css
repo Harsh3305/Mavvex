@@ -26,6 +26,7 @@
     object-fit: contain;
     width: clamp(250px, 20%, 350px);
     max-width: 350px;
+    max-height: 350px;
     flex: 0.5;
 }
 .content {
@@ -34,6 +35,8 @@
     font-weight: normal;
     color: #535353;
     font-family: 'Dongle', sans-serif;
+    line-height: 80.8%;
+    text-align: justify;
 }
 .buttons {
     margin-top: 30px;
@@ -79,5 +82,46 @@
 @media (width <= 1600px) {
     .industryType {
         line-height: 1.1;
+    }
+}
+
+@media (width <= 860px) {
+    .image {
+        margin-left: 30px;
+    }
+}
+@media (width < 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        margin-top: 40px;
+        width: 100%;
+        margin-left: 0;
+        max-height: 150px;
+    }
+    .content {
+        width: 100%;
+    }
+}
+@media (width <=400px) {
+    .buttonHighlighted {
+        margin-right: 0;
+    }
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (width <=370px) {
+    .buttonHighlighted {
+        margin-bottom: 20px;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
