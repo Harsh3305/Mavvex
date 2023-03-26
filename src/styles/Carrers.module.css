@@ -1,0 +1,25 @@
+.main {
+    min-height: 100vh;
+    /*background-color: red;*/
+}
+.topContainer {
+    /*background: red;*/
+    position: relative;
+}
+.image {
+    width: 100%;
+    /*filter: blur(2px);*/
+}
+.title {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: max-content;
+    background: white;
+    font-size: var(--font-64);
+    font-weight: bolder;
+    color: var(--background-primary);
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
