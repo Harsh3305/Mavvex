@@ -146,6 +146,9 @@
 .middle_col_l, .middle_col_m, .middle_col_r {
     height: 70%;
 }
+.middle_col_l > .thunder_icon, .middle_col_r > .thunder_icon {
+    display: none;
+}
 .middle_col_m {
     padding: 0 3em;
     display: grid;
@@ -403,11 +406,13 @@
     }
     .comp_inner_div {
         position: relative;
+        min-height: 1260px;
+        max-height: 1436px;
         height: 200vh;
         bottom: 0%;
         left: 0%;
         transform: none;
-        grid-template-rows: [start] 50vh [row1] 50vh [row2] 50vh [row3] 50vh [end];
+        grid-template-rows: [start] 25% [row1] 25% [row2] 25% [row3] 25% [end];
     }
     .comp_div {
         height: max-content;
@@ -449,6 +454,9 @@
         width: 100vw;
         height: 100%;
     }
+    .middle_col_l > .thunder_icon, .middle_col_r > .thunder_icon {
+        display: block;
+    }
     .middle_col_r {
         background-color: var(--background-secondary);
     }
@@ -460,12 +468,12 @@
     }
     .comp_left > .side_col , .middle_col_r {
         display: grid;
-        grid-template-rows: [first] 10% [l1] 15% [l2] auto [l3] 10% [end];
+        grid-template-rows: [first] 20% [l1] 15% [l2] auto [l3] 10% [end];
         grid-template-columns: [first] 10% [l1] 50% [l2] 30% [l3] 10% [end];
     }
     .comp_right > .side_col , .middle_col_l {
         display: grid;
-        grid-template-rows: [first] 10% [l1] 15% [l2] auto [l3] 10% [end];
+        grid-template-rows: [first] 20% [l1] 15% [l2] auto [l3] 10% [end];
         grid-template-columns: [first] 10% [l1] 30% [l2] 50% [l3] 10% [end];
     }
     .comp_right > .side_col > p {
@@ -488,13 +496,13 @@
         grid-row-end: 4;
     }
     .icon_r, .icon_l {
-        grid-row-start: 2;
-        grid-row-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 5;
     }
     .side_col_heading {
         font-size: 24px;
         margin: 0;
-        height: 100%;
+        /* height: 100%; */
     }
     .side_col_para {
         font-size: 16px;

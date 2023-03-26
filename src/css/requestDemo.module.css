@@ -5,6 +5,7 @@
     justify-content: space-evenly;
     background-color: #F5F9FC;
     height: 50vh;
+    min-height: 440px;
 }
 
 .thunder_icon {
@@ -21,12 +22,12 @@
     padding: 5px;
     font-weight: bolder;
     font-family: 'DM Sans', sans-serif, monospace;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
 .inputForm {
-    margin-top: 2em;
+    /* margin-top: 2em; */
     width: 50%;
     display: flex;
     align-items: center;
@@ -38,9 +39,9 @@
     font-size: var(--font-35);
     padding: 3.6px 1em;
     border-radius: 30px;
-    border-color: black;
     margin-right: 5px;
     width: 70%;
+    border: 2px solid black;
 }
 
 .button {
@@ -53,4 +54,17 @@
     border-radius: 1em;
     font-family: 'Dongle', sans-serif, monospace;
     font-size: var(--font-35);
+}
+
+@media (width <= 760px) {
+    .inputForm {
+        width: calc(max(60%, 250px));
+        flex-direction: column;
+        /* background-color: red; */
+        padding: 0;
+    }
+    .emailForm {
+        width: 100%;
+        margin: 10px 0px ;
+    }
 }

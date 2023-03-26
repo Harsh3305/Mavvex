@@ -201,3 +201,28 @@
         /* visibility: hidden; */
     }
 }
+
+@media (width <= 580px) {
+    .header_body {
+        padding-bottom: 0;
+    }
+    .header_inner_body {
+        margin: 0px 46px 0px 46px;
+    }
+    .logo_image {
+        width: 90px;
+    }
+    .heading_section {
+        flex-direction: column;
+        padding: 0;
+        border: 2px solid #eee;
+    }
+    .heading_section > div {
+        width: 100%;
+        padding: 3px;
+    }
+    .heading_section > div:nth-child(odd) {
+        background-color: white;
+        width: 100%;
+    }
+}
