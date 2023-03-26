@@ -77,6 +77,49 @@
     height: 20px;
     background-color: #D9D9D9;
     z-index: -1;
-    top: 60%;
-
+    top: 45%;
+}
+.bottomContainer {
+    /*background-color: darkgrey;*/
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+.categories {
+    /*background-color: #00A991;*/
+    display: flex;
+}
+.category {
+    flex: 1;
+    height: 100%;
+}
+.categoryTitle {
+    font-size: var(--font-35);
+    margin-bottom: 2%;
+}
+.categoryHeading {
+    margin-bottom: 4%;
+    font-size: var(--font-48);
+    font-weight: bold;
+    font-family: var(--font-dm);
+}
+.roles {
+    width: fit-content;
+}
+.role {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+.nameOfRole {
+    color: #535353;
+    margin-right: 10px;
+    font-family: var(--font-dm);
+    font-size: var(--font-24);
+}
+.nameOfRole:hover {
+    text-decoration: underline;
+    color: var(--background-primary);
 }

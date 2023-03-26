@@ -37,9 +37,55 @@ export default function Careers() {
                     />
                 </div>
             </div>
+            <div className={styles.bottomContainer}>
+                <div className={styles.categoryHeading}>
+                    Roles
+                </div>
+                <div className={styles.categories}>
+                    {generateCategory(
+                        "Engineering",
+                        ["SDE", "ML Engineer"]
+                    )}
+                    {generateCategory(
+                        "Research & Development",
+                        ["Research Fellow", "Research Engineer"]
+                    )}
+                    {generateCategory(
+                        "Business",
+                        ["Business"]
+                    )}
+                </div>
+            </div>
             <div className={styles.underline}>
 
             </div>
         </div>
     )
+    function generateCategory(categoryName, roles) {
+        return <div className={styles.category}>
+            <div className={styles.categoryTitle}>
+                {categoryName}
+            </div>
+                <div className={styles.roles}>
+                    {
+                        roles.map(function (data, index) {
+                            return (generateRole(data, index))
+                        })
+                    }
+                </div>
+
+        </div>
+    }
+    function generateRole (role, index) {
+        return <div className={styles.role} key={index}>
+            <div className={styles.nameOfRole}>
+                {role}
+            </div>
+            <Image
+                src={"/image_assets/Vector20.png"}
+                width={10}
+                height={10}
+            />
+        </div>
+    }
 }
