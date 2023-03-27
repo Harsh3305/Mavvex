@@ -56,9 +56,6 @@ export default function Careers() {
                     )}
                 </div>
             </div>
-            <div className={styles.underline}>
-
-            </div>
         </div>
     )
     function generateCategory(categoryName, roles) {
