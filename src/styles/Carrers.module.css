@@ -53,6 +53,7 @@
     text-decoration: underline;
 }
 .mainContent {
+    white-space: pre-line;
     font-family: var(--font-dm);
     font-size: var(--font-24);
 }
