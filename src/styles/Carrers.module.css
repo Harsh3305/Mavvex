@@ -14,14 +14,18 @@
 .title {
     position: absolute;
     bottom: 0;
-    left: 8%;
+    left: 7%;
     width: max-content;
+    color: var(--background-primary);
     background: white;
     font-size: var(--font-64);
+    font-family:var(--font-dm);
     font-weight: bolder;
     padding: 20px;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
 }
 .middleContainer {
     margin: 5%;
@@ -46,6 +50,7 @@
     font-size: var(--font-48);
     font-weight: bold;
     font-family: var(--font-dm);
+    text-decoration: underline;
 }
 .mainContent {
     font-family: var(--font-dm);
