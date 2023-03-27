@@ -5,42 +5,40 @@ import loadData from "@/dao/loadData";
 export default function Careers() {
     return (
         <div className={styles.main}>
-            <div className={styles.topContainer}>
+            <div className={styles.title_container}>
                 <Image
-                    className="contact_image_div"
+                    className={styles.career_back_image}
                     src={"/image_assets/background_image.jpg"}
                     width={200} height={200} alt="back-img"
                 />
-                <div className={styles.title}>
+                <div className={styles.page_title}>
                     Careers
                 </div>
             </div>
-            <div className={styles.middleContainer}>
-                <div className={styles.leftContainer}>
-                    <div className={styles.content}>
-                        <div className={styles.heading}>
-                            Join out Team
-                        </div>
-                        <div className={styles.mainContent}>
+            <div className={styles.content_container}>
+                <div className={styles.left}>
+                    <h1>Our Mission</h1>
+                        <p className={styles.para}>
                             {loadData("careerTeam")}
-                        </div>
-                        <div className={styles.joinNow}>
+                        </p>
+                        <h2 className={styles.joinNow}>
                             Are you ready to grow with us?
-                        </div>
-                    </div>
+                        </h2>
                 </div>
-                <div className={styles.rightContainer}>
+                <div className={styles.right}>
                     <Image
                         src="/image_assets/Rectangle_48.png"
                         width={500}
                         height={500}
+                        alt="career-page-image"
+                        className={styles.business_image} 
                     />
                 </div>
             </div>
             <div className={styles.bottomContainer}>
-                <div className={styles.categoryHeading}>
+                <h1 className={styles.categoryHeading}>
                     Roles
-                </div>
+                </h1>
                 <div className={styles.categories}>
                     {generateCategory(
                         "Engineering",
@@ -60,9 +58,9 @@ export default function Careers() {
     )
     function generateCategory(categoryName, roles) {
         return <div className={styles.category}>
-            <div className={styles.categoryTitle}>
+            <h2 className={styles.categoryTitle}>
                 {categoryName}
-            </div>
+            </h2>
                 <div className={styles.roles}>
                     {
                         roles.map(function (data, index) {
@@ -75,13 +73,14 @@ export default function Careers() {
     }
     function generateRole (role, index) {
         return <div className={styles.role} key={index}>
-            <div className={styles.nameOfRole}>
+            <h2 className={styles.nameOfRole}>
                 {role}
-            </div>
+            </h2>
             <Image
                 src={"/image_assets/Vector20.png"}
                 width={10}
                 height={10}
+                alt="tilted_arrow"
             />
         </div>
     }
