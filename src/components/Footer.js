@@ -10,7 +10,7 @@ export default function Footer() {
     <div className="footer_body">
       <div className="footer_inner_body">
         <div className="company_info">
-          <Image src='/image_assets/logo.svg' width={171.86} height={99} alt="mavvex_logo"/>
+          <Image src='/image_assets/logo.svg' width={171.86} height={99} alt="mavvex_logo" className='footer_logo'/>
           <p className='address_div footer_text'>1197 Sainik Colony Sector 49, Faridabad HR 121001 India</p>
           <p className='footer_email footer_text'>Email: admin@mavvexlabs.com</p>
           <p className='footer_text_high footer_text'>Follow us!</p>

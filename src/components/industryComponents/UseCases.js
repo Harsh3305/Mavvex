@@ -1,4 +1,5 @@
 import styles from "@/styles/industryComponent/UseCases.module.css"
+
 export default function UseCases({data }) {
     return <div className={styles.main}>
         <div className={styles.container}>

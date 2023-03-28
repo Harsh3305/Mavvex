@@ -1,9 +1,20 @@
 .main {
     margin-top: 5%;
 }
+.main > h1 {
+    font-family: var(--font-dm);
+    /* font-size: var(--font-48); */
+}
 .container {
     margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+@media (width <= 640px) {
+    .container {
+        flex-direction: column;
+        min-height: 550px;
+        max-height: 600px;
+    }
 }

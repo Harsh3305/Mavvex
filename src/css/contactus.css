@@ -1,6 +1,8 @@
 .contact_body {
     background-color: white;
     height: 100vh;
+    min-height: calc(380px + 580px);
+    /* position: relative; */
 }
 .contact_image_div {
     /* aspect-ratio: 9/16; */
@@ -11,7 +13,7 @@
 .form_outer_most {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 580px;
 }
 .form_outer {
     position: absolute;
@@ -137,4 +139,233 @@
 .trans {
     background-color: transparent;
     border-color: white;
+}
+.contact_form > label:nth-child(1) {
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.contact_form > label:nth-child(2) {
+    grid-column-start: 4;
+    grid-row-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.contact_form > label:nth-child(3) {
+    grid-column-start: 2;
+    grid-row-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.contact_form > label:nth-child(4) {
+    grid-column-start: 4;
+    grid-row-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+@media (width <= 1400px) and (width >= 1024px) {
+    .form_outer {
+        max-width: calc(1024px - 1024*0.2px);
+        max-height: 450px;
+    }
+    .contact_icon {
+        object-fit: contain;
+        width: 80px;
+        height: 80px;
+    }
+    .contact_form {
+        grid-template-columns: [first] calc(40px + 1em) [col1] auto [col2] 2em [col3] auto [col4] calc(40px + 1em) [end];
+
+        grid-template-rows: [first] calc(40px + 1em) [row1] 4.5em [row2] 2em [row3] 4.5em [row4] 2em [row5] 5.5em [row6] auto [end];
+    }
+    .form_left > h1 {
+        font-size: 56px;
+    }
+    .dot {
+        height: 15px;
+        width: 15px;
+    }
+    .cmp_info_form > .logo {
+        width: 110px;
+    }
+    .cmp_info_form {
+        margin-right: 3em;
+        margin-top: 1em;
+    }
+    .cmp_info_form > p {
+        font-size: 18px;
+    }
+    .cmp_info_form > .social_btn > .footer_icons_btn{
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 0.4em
+    }
+    .trans > .image {
+        object-fit: contain;
+        width: 25px;
+        transform: scale(1);
+    }
+}
+
+@media (width < 1024px) and (width >= 768px ) {
+    .contact_body {
+        min-height: calc(480px + 700px);
+    }
+    .form_outer_most {
+        min-height: 650px;
+        /* background-color: aqua; */
+    }
+    .form_outer {
+        flex-direction: column;
+        max-width: calc(768px - 768*0.2px);
+        height: max-content;
+    }
+    .dot_wrapper {
+        display: none;
+    }
+    .form_left {
+        border-radius: 20px 20px 0px 0px;
+        min-height: 200px;
+    }
+    .form_left > h1 {
+        font-size: 64px;
+    }
+    .contact_form {
+        min-height: 550px;
+        border-radius: 0px 0px 20px 20px;
+        grid-template-columns: [first] 10% [col1] auto [col2] 3% [col3] auto [col4] 10% [end];
+
+        grid-template-rows: [first] 15% [row1] 5em [row2] 2em [row3] 5em [row4] 2em [row5] 6em [row6] 2em [row7] 3em [row8] auto [end];
+    }
+    .contact_form > button {
+        grid-row-start: 8;
+        grid-row-end: 9;
+        grid-column-start:2;
+        grid-column-end:5;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+    }
+    .cmp_info_form {
+        display: none;
+    }
+    .contact_icon {
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+@media (width < 768px) and (width >= 320px) {
+    .contact_body {
+        min-height: calc(480px + 700px);
+    }
+    .form_outer_most {
+        min-height: 650px;
+        /* background-color: aqua; */
+    }
+    .form_outer {
+        flex-direction: column;
+        max-width: calc(100vw - 100*0.1vw);
+        height: max-content;
+    }
+    .dot_wrapper {
+        display: none;
+    }
+    .form_left {
+        border-radius: 20px 20px 0px 0px;
+        min-height: 200px;
+    }
+    .form_left > h1 {
+        font-size: 64px;
+    }
+    .contact_form {
+        min-height: 550px;
+        border-radius: 0px 0px 20px 20px;
+        grid-template-columns: [first] 10% [col1] auto [col2] 3% [col3] auto [col4] 10% [end];
+
+        grid-template-rows: [first] 15% [row1] 5em [row2] 2em [row3] 5em [row4] 2em [row5] 6em [row6] 2em [row7] 3em [row8] auto [end];
+    }
+    .contact_form > label > p {
+        font-size: 24px;
+    }
+    .contact_form > button {
+        grid-row-start: 8;
+        grid-row-end: 9;
+        grid-column-start:2;
+        grid-column-end:5;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+    }
+    .cmp_info_form {
+        display: none;
+    }
+    .contact_icon {
+        left: 50%;
+        top: 100%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (width <= 510px) {
+    .contact_body {
+        height: calc(900px + 480px);
+    }
+    .form_outer_most {
+        height: 900px;
+    }
+    .contact_form {
+        min-height: 750px;
+        border-radius: 0px 0px 20px 20px;
+        grid-template-columns: [first] 10% [col1] auto [col2] 3% [col3] auto [col4] 10% [end];
+
+        grid-template-rows: [first] 15% [row1] 5em [row2] 2em [row3] 5em [row4] 2em [row5] 5em [row6] 2em [row7] 5em [row8] 2em [row9] 6em [row10] 2em [row11] 3em [row12] auto [end];
+    }
+    .contact_form > label, .contact_form > button {
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+    .contact_form > label:nth-child(1) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start:2;
+        grid-row-end: 3;
+    }
+    .contact_form > label:nth-child(2) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start:4;
+        grid-row-end: 5;
+    }
+    .contact_form > label:nth-child(3) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start:6;
+        grid-row-end: 7;
+    }
+    .contact_form > label:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start:8;
+        grid-row-end: 9;
+    }
+    .contact_form > label:nth-child(5) {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start:10;
+        grid-row-end: 11;
+    }
+    .contact_form > button {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 12;
+        grid-row-end: 13;
+    }
 }
