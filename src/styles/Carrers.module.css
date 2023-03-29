@@ -104,7 +104,9 @@
     color: var(--background-primary);
 }
 
-
+.role > img {
+    margin-left: 5px;
+}
 
 /* responsive css */
 @media (width <= 768px) {
@@ -156,5 +158,11 @@
     }
     .about_back_image {
        height: 150px;
+    }
+ }
+
+ @media (width <= 580px) {
+    .categories {
+        flex-direction: column;
     }
  }
