@@ -34,6 +34,16 @@ export default function Title() {
         
     </div>
     <div className="comp_div">
+        <div className="upper">
+            <div className="l"></div>
+            <div className="m"></div>
+            <div className="r"></div>
+        </div>
+        <div className="lower">
+            <div className="l"></div>
+            <div className="m"></div>
+            <div className="r"></div>
+        </div>
         <div className="comp_inner_div">
             <div className="comp_left  comp_col">
                 <div className="side_col">
