@@ -17,9 +17,11 @@ const company = ["About us", "Contact us", "Carrers"]
 const company_routes = ["/company/AboutUs", "/company/ContactUs", "/company/Careers"]
 const defaultTags = ["Use Cases", "Industries", "Customers", "Research", "Company", "Blog"];
 
+
 export default function Header() {
 
   const [tags, setTag] = useState(defaultTags);
+  const [menuState, setMenuState] = useState(0);
   const router = useRouter()
   const currentPath = `${router.pathname}`;
   const [highlightedTag, setHighlightedTag] = useState(-1);
@@ -65,10 +67,12 @@ export default function Header() {
           <Link href={"/"}>
             <Image className='logo_image' src="/image_assets/logo.svg" width={171.86} height={99} alt="company-logo" />
           </Link>
+          <Image className='menu_icon' src={menuState==0 ? "/image_assets/hamburger_open.svg" : "/image_assets/hamburger_close.svg"} width={20} height={16} alt="menu-icon" onClick={(e) => setMenuState((menuState+1)%2)}/>
+
         </div>
 
         {/* heading section */}
-        <ul className='heading_section'>
+        <ul className={`heading_section ${menuState==0 ?"menu_open" : "menu_close"}`}>
 
           <div className='dropdown'>
             <li className='header_text heading dropdown_btn'>{tags[0]} <span><Image className='header_dropdown' src="/image_assets/dropdown.svg" width={8} height={4} alt="dropdown-icon" /></span></li>

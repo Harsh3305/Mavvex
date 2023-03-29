@@ -46,37 +46,37 @@ export default function ContactUs() {
                 </div>
                 <form className='contact_form'>
                     <label style={{
-                        gridcolumnStart:2,
-                        gridColumnEnd:3,
-                        gridRowStart:2,
-                        gridRowEnd:3
+                        // gridcolumnStart:2,
+                        // gridColumnEnd:3,
+                        // gridRowStart:2,
+                        // gridRowEnd:3
                     }}>
                         <p>First Name</p>
                         <input name="firstName" />
                     </label>
                     <label style={{
-                        gridcolumnStart:4,
-                        gridColumnEnd:5,
-                        gridRowStart:2,
-                        gridRowEnd:3
+                        // gridcolumnStart:4,
+                        // gridColumnEnd:5,
+                        // gridRowStart:2,
+                        // gridRowEnd:3
                     }}>
                         <p>Last Name</p>
                         <input name="lastName" />
                     </label>
                     <label style={{
-                        gridcolumnStart:2,
-                        gridColumnEnd:3,
-                        gridRowStart:4,
-                        gridRowEnd:5
+                        // gridcolumnStart:2,
+                        // gridColumnEnd:3,
+                        // gridRowStart:4,
+                        // gridRowEnd:5
                     }}>
                         <p>Company</p>
                         <input name="companyName" />
                     </label>
                     <label style={{
-                        gridcolumnStart:4,
-                        gridColumnEnd:5,
-                        gridRowStart:4,
-                        gridRowEnd:5
+                        // gridcolumnStart:4,
+                        // gridColumnEnd:5,
+                        // gridRowStart:4,
+                        // gridRowEnd:5
                     }}>
                         <p>Work Email</p>
                         <input name="workEmail" />

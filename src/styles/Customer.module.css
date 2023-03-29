@@ -38,6 +38,7 @@
 }
 .right_container {
     flex: 0.4;
+    max-height: 250px;
 }
 .banner {
 
@@ -195,4 +196,132 @@
     font-family: var(--font-monts);
     font-size: var(--font-35);
     font-weight: 500;
+}
+
+@media (width <= 1024px) {
+    .left_container > p {
+        margin-right: 20px;
+        text-align: justify;
+    }
+    .right_container {
+        width: 250px;
+    }
+
+    .review_section {
+        margin-top: 50px;
+    }
+    .review_left {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .review_card {
+        height: 350px;
+    }
+    .page_intro {
+        margin: 0em 10% 0em 10%;
+    }
+    .banner > p {
+        margin-left: 10%;
+    }
+    .banner > img {
+        margin-right: 10%;
+    }
+    .customers_img {
+        margin: 0 10%;
+        width: calc(100% - 20%);
+    }
+    .customer_section > h3 {
+        margin: 0 10%;
+    }
+}
+
+@media (width <= 940px) {
+    .review_card {
+        height: 450px;
+    }
+}
+@media (width <= 768px) {
+    .banner {
+        flex-direction: column;
+        height: max-content;
+    }
+    .banner > img {
+        /* width: 100%; */
+        margin: 0;
+        border: 0;
+        /* border-top: 2px solid #e5e5e5; */
+    }
+    .banner > p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .customers_img {
+        width: calc(100% - 20%);
+        height: clamp(250px, 10%, 450px);
+    }
+    .banner_img {
+        width: calc(100% - 20%);
+    }
+    .arrow_cont > img{
+        display: none;
+    }
+}
+
+@media (width <= 580px) {
+    .page_intro {
+        flex-direction: column;
+    }
+    .left_container > h1 {
+        text-align: center;
+    }
+    .left_container > p {
+        margin: 0px;
+        width: 100%;
+    }
+    .right_container {
+        width: 100%;
+        max-height: 150px;
+        margin-top: 20px;
+    }
+    .left_container > button {
+        margin-top: 20px;
+    }
+    .review_section {
+        height: max-content;
+    }
+    .review_right {
+        display: none;
+    }
+    .review_left {
+        flex: 1;
+        height: max-content;
+    }
+    .review_left > p {
+        text-align: justify;
+    }
+    .review_container {
+        margin: 80px 10%;
+        width: 80%;
+    }
+    .review_card {
+        height: max-content;
+    }
+    .profile_photo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (width <= 425px) {
+    .review_left > p {
+        font-size: 16px;
+    }
+    .user_info > h2 {
+        font-size: 16px;
+    }
+    .user_info > img {
+        object-fit: contain;
+        width: 50%;
+        height: 50px;
+    }
 }
