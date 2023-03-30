@@ -19,7 +19,18 @@
     bottom: 0%;
     left: 50%;
     transform: translateX(-50%);
+    background-size: 300% 100%;
+    animation: animateBg 10s infinite alternate-reverse;
 }
+@keyframes animateBg {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
 .inner_div_2 {
     height: calc(100vw + 40em);
     width: calc(100vw + 40em);
@@ -55,6 +66,8 @@
     background-image: var(--gradient-primary);
     background-clip: text;
     color: transparent;
+    background-size: 300% 100%;
+    animation: animateBg 5s infinite alternate-reverse;
 }
 .clamp {
     line-clamp:2 ;

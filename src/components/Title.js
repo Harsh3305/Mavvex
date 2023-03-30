@@ -1,5 +1,5 @@
 // import "@/css/title.css";
-
+import Typewriter from 'typewriter-effect';
 import Image from "next/image";
 
 export default function Title() {
@@ -14,7 +14,13 @@ export default function Title() {
         </div>
         <div className="text_div">
             <h1 className="title_text gradient_text">
-                AI synthetic data
+                <Typewriter
+                    options={{
+                        strings: "AI synthetic data",
+                        autoStart: true,
+                        loop: true,
+                    }}
+                />
             </h1>
             <h1 className="title_text clamp">
             that is faster, safer and fairer
