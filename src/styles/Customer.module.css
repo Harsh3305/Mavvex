@@ -330,3 +330,6 @@
         height: 50px;
     }
 }
+.arrow_cont > img {
+    cursor: pointer;
+}
