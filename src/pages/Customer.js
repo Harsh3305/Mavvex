@@ -3,6 +3,7 @@ import styles from "../styles/Customer.module.css"
 import Image from 'next/image'
 import loadData from '@/dao/loadData';
 import {useRouter} from "next/router";
+import Typewriter from "typewriter-effect";
 function Customer() {
   const para = loadData("CustomerPageIntroPara")
     const router = useRouter();
@@ -95,7 +96,15 @@ function Customer() {
                   alt="3x-logo"
                   className={styles.growth_logo}
                   />
-                  <p>Revenue Growth Tripled</p>
+                  <p>
+                      <Typewriter
+                          options={{
+                              strings: "Revenue Growth Tripled",
+                              autoStart: true,
+                              loop: false,
+                          }}
+                      />
+                      </p>
                 </div>
               </div>
               <Image 
