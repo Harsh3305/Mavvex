@@ -1,9 +1,13 @@
 import styles from "@/css/about.module.css";
 import loadData from "@/dao/loadData";
 import Image from "next/image";
+import {useRouter} from "next/router";
 function About(){
+    const router = useRouter();
+    function navigate(path) {
+        router.push(path).then()
+    }
     return(
-
         <div className={styles.maincont}>
             <div className={styles.title_container}>
                 <Image 
@@ -57,7 +61,7 @@ function About(){
             <div className={styles.additional_info}>
                 <h1>Want to Join Us?</h1>
                 <h1>go to our careers page.</h1>
-               <button className={styles.button}>Careers</button>
+               <button className={styles.button} onClick={()=>{navigate("/company/Careers")}}>Careers</button>
             </div>
             
         </div>

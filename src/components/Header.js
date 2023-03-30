@@ -28,6 +28,9 @@ export default function Header() {
   console.log({
     highlightedTag: highlightedTag
   })
+  function navigate(path) {
+    router.push(path).then()
+  }
   if (currentPath.includes("usecase")) {
     setPath(0)
   }
@@ -116,7 +119,7 @@ export default function Header() {
           {/* <div className='header_btn'>
             <p className='header_text button_text'>Get in touch</p>
           </div> */}
-          <button className='header_btn'>
+          <button className='header_btn' onClick={() => {navigate("/company/ContactUs") }}>
             Get in touch
           </button>
         </div>

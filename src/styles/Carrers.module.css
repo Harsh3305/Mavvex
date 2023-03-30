@@ -98,6 +98,7 @@
     font-family: var(--font-dm);
     font-size: var(--font-24);
     font-weight: 400;
+    cursor: pointer;
 }
 .nameOfRole:hover {
     text-decoration: underline;

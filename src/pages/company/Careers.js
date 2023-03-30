@@ -1,6 +1,7 @@
 import styles from "@/styles/Carrers.module.css";
 import Image from "next/image";
 import loadData from "@/dao/loadData";
+import Typewriter from "typewriter-effect";
 
 export default function Careers() {
     return (
@@ -22,7 +23,12 @@ export default function Careers() {
                             {loadData("careerTeam")}
                         </p>
                         <h2 className={styles.joinNow}>
-                            Are you ready to grow with us?
+                            <Typewriter
+                                options={{
+                                    strings: "Are you ready to grow with us?",
+                                    autoStart: true,
+                                }}
+                            />
                         </h2>
                 </div>
                 <div className={styles.right}>

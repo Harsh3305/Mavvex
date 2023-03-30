@@ -1,8 +1,13 @@
 // import "@/css/title.css";
 import Typewriter from 'typewriter-effect';
 import Image from "next/image";
+import { useRouter } from 'next/router'
 
 export default function Title() {
+    const router = useRouter();
+    function navigate(path) {
+        router.push(path).then()
+    }
     return <div className="title_main">
     <div className="inner_div">
         <div className="inner_div_1">
@@ -29,10 +34,10 @@ export default function Title() {
             Transform your production data into privacy-preserving ad highly realistic synthetic data. Share, access and build with data safely across teams, businesses, and international borders.
             </p>
             <div className="button_grp">
-                <button className="btn primary">
+                <button className="btn primary" onClick={()=>{navigate("/company/ContactUs")}}>
                     Get in touch
                 </button>
-                <button className="btn secondary">
+                <button className="btn secondary" onClick={()=>{navigate("/company/AboutUs")}}>
                     Find out more
                 </button>
             </div>
@@ -137,10 +142,10 @@ export default function Title() {
                 </p>
             </div>
             <div className="use_case_btn_grp">
-                <button className="btn primary">
+                <button className="btn primary" onClick={()=>{navigate("/usecase/DeepTech")}}>
                     See more use cases
                 </button>
-                <button className="btn secondary">
+                <button className="btn secondary" onClick={()=>{navigate("/usecase/BetterData")}}>
                     Have another use case? let us know
                 </button>
             </div>
