@@ -18,7 +18,7 @@ export default function Title() {
                     options={{
                         strings: "AI synthetic data",
                         autoStart: true,
-                        loop: true,
+                        loop: false
                     }}
                 />
             </h1>
@@ -26,7 +26,14 @@ export default function Title() {
             that is faster, safer and fairer
             </h1>
             <p className="meta_data_text">
-            Transform your production data into privacy-preserving ad highly realistic synthetic data. Share, access and build with data safely across teams, businesses, and international borders.
+                <Typewriter
+                    options={{
+                        strings: "Transform your production data into privacy-preserving ad highly realistic synthetic data. Share, access and build with data safely across teams, businesses, and international borders.",
+                        autoStart: true,
+                        loop: true,
+                        delay: 5
+                    }}
+                />
             </p>
             <div className="button_grp">
                 <button className="btn primary">
