@@ -110,7 +110,13 @@ export default function Title() {
                 <Image src={"/image_assets/community_icon.svg"} height={80} width={80} alt={"community-icon"} className="community_icon" />
             </div>
             <h1>
-                Enable your team to move faster and safer
+                <Typewriter
+                    options={{
+                        strings: "Enable your team to move faster and safer",
+                        autoStart: true,
+                        loop: true,
+                    }}
+                />
             </h1>
             <div className="use_case_meta" id="meta_1">
                 <p>Product Development and Testing</p>
