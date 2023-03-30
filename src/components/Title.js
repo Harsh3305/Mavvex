@@ -18,7 +18,7 @@ export default function Title() {
                     options={{
                         strings: "AI synthetic data",
                         autoStart: true,
-                        loop: false
+                        loop: true,
                     }}
                 />
             </h1>
@@ -26,14 +26,7 @@ export default function Title() {
             that is faster, safer and fairer
             </h1>
             <p className="meta_data_text">
-                <Typewriter
-                    options={{
-                        strings: "Transform your production data into privacy-preserving ad highly realistic synthetic data. Share, access and build with data safely across teams, businesses, and international borders.",
-                        autoStart: true,
-                        loop: true,
-                        delay: 5
-                    }}
-                />
+            Transform your production data into privacy-preserving ad highly realistic synthetic data. Share, access and build with data safely across teams, businesses, and international borders.
             </p>
             <div className="button_grp">
                 <button className="btn primary">
@@ -117,13 +110,7 @@ export default function Title() {
                 <Image src={"/image_assets/community_icon.svg"} height={80} width={80} alt={"community-icon"} className="community_icon" />
             </div>
             <h1>
-                <Typewriter
-                    options={{
-                        strings: "Enable your team to move faster and safer",
-                        autoStart: true,
-                        loop: true,
-                    }}
-                />
+                Enable your team to move faster and safer
             </h1>
             <div className="use_case_meta" id="meta_1">
                 <p>Product Development and Testing</p>
