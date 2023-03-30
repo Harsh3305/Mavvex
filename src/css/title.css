@@ -20,7 +20,7 @@
     left: 50%;
     transform: translateX(-50%);
     background-size: 300% 100%;
-    animation: animateBg 5s infinite alternate-reverse;
+    animation: animateBg 10s infinite alternate-reverse;
 }
 @keyframes animateBg {
     0% {
@@ -67,7 +67,7 @@
     background-clip: text;
     color: transparent;
     background-size: 300% 100%;
-    animation: animateBg 2s infinite alternate-reverse;
+    animation: animateBg 5s infinite alternate-reverse;
 }
 .clamp {
     line-clamp:2 ;
