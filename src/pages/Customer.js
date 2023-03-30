@@ -2,15 +2,20 @@ import React from 'react'
 import styles from "../styles/Customer.module.css"
 import Image from 'next/image'
 import loadData from '@/dao/loadData';
+import {useRouter} from "next/router";
 function Customer() {
   const para = loadData("CustomerPageIntroPara")
+    const router = useRouter();
+    function navigate(path) {
+        router.push(path).then()
+    }
   return (
     <div className={styles.customer_main}>
         <div className={styles.page_intro}>
             <div className={styles.left_container}>
                 <h1>Customers</h1>
                 <p>{!para?"":`${para}`}</p>
-                <button className='cust_btn'>Case Studies</button>
+                <button className='cust_btn' onClick={() => {navigate("/industries/HealthCare")}}>Case Studies</button>
             </div>
             <Image className={styles.right_container} 
             src={'/image_assets/customers/customer_icon.svg'}

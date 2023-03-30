@@ -3,6 +3,7 @@ import AboutUs from "@/components/About"
 // import Aboutbody from "@/components/Aboutbody"
 
 export default function About() {
+
     return (
         <div>
             {/* <Abouttitle></Abouttitle> */}
