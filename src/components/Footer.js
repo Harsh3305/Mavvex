@@ -64,7 +64,7 @@ export default function Footer() {
           <ol className='srvc_list'>
             <li className='srvc_list_items footer_text'><Link href={company_routes[0]}>About us</Link></li>
             <li className='srvc_list_items footer_text'><Link href={company_routes[1]}>Contact us</Link></li>
-            <li className='srvc_list_items footer_text'><Link href={company_routes[1]}>Careers</Link></li>
+            <li className='srvc_list_items footer_text'><Link href={company_routes[2]}>Careers</Link></li>
           </ol>
         </div>
       </div>
