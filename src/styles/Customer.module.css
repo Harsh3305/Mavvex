@@ -39,6 +39,25 @@
 .right_container {
     flex: 0.4;
     max-height: 250px;
+    animation: heartbeatAnimation 4s infinite reverse;
+}
+@keyframes heartbeatAnimation {
+    0%
+    {
+        transform: scale( .75 );
+    }
+    40%
+    {
+        transform: scale( .75 );
+    }
+    60%
+    {
+        transform: scale( 1.1 );
+    }
+    100%
+    {
+        transform: scale( .75 );
+    }
 }
 .banner {
 
