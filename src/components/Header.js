@@ -13,7 +13,7 @@ const industries_routes = ["/industries/HealthCare", "/industries/Retail", "/ind
 const research = ["Publications", "Research Team"]
 const research_routes = ["/research/Publication", "/research/ResearchTeam"]
 
-const company = ["About us", "Contact us", "Carrers"]
+const company = ["About us", "Contact us", "Careers"]
 const company_routes = ["/company/AboutUs", "/company/ContactUs", "/company/Careers"]
 const defaultTags = ["Use Cases", "Industries", "Customers", "Research", "Company", "Blog"];
 
