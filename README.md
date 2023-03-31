@@ -22,8 +22,8 @@ nano data.json
 ## Design
 [Figma](https://www.figma.com/file/jvt6nhxBnvxhU8zgIfzUX6/IP---WEB-DEV?node-id=284-331&t=KzFuy5r4C6MEvRMO-0)
 ## Contributor
-This website is created with ❤️ by 
-- **[Harsh](https://github.com/Harsh3305)**
-- **[Sourav](https://github.com/souravb786)**
-- **[Rajat](https://github.com/souravb786)**
-- **[Vishal](https://github.com/vsbelieve)**
+This website is created by 
+- **[Harsh 2019164](https://github.com/Harsh3305)**
+- **[Sourav 2019209](https://github.com/souravb786)**
+- **[Rajat 2019192](https://github.com/rajatsingharia215)**
+- **[Vishal 2019218](https://github.com/vsbelieve)**
